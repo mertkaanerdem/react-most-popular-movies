@@ -1,7 +1,22 @@
-import React from "react";
-
+import { Navbar, Container } from "react-bootstrap";
+import Logo from "../../assets/mertkaanerdem.jpg";
 function Nav() {
-  return <div>Navigation</div>;
+  return (
+    <Navbar bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="/">
+          <img
+            alt=""
+            src={Logo}
+            width="33"
+            height="33"
+            className="d-inline-block align-top me-2"
+          />
+          ReactMostPopularMovies
+        </Navbar.Brand>
+      </Container>
+    </Navbar>
+  );
 }
 
 export default Nav;
