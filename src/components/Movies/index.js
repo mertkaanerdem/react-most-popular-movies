@@ -1,13 +1,16 @@
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button, Spinner } from "react-bootstrap";
 import { useMovies } from "../../context/MoviesContext";
 import { Link } from "react-router-dom";
 import "./Movies.css";
 
 function Movies() {
-  const { movies } = useMovies();
+  const { movies, isLoading } = useMovies();
 
   return (
     <Container className="App mt-2">
+      {isLoading && (
+        <Spinner animation="grow" variant="warning" className="spinner" />
+      )}
       <Row xs={1} md={3} xl={4} className="g-4">
         {movies.map((movie) => (
           <Col key={movie.id} className="text-center">

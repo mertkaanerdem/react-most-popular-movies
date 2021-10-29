@@ -20,3 +20,12 @@
   font-size: 15px;
   font-weight: 500;
 }
+
+.spinner {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
