@@ -14,7 +14,10 @@ function Movies() {
       <Row xs={1} md={3} xl={4} className="g-4">
         {movies.map((movie) => (
           <Col key={movie.id} className="text-center">
-            <Card style={{ margin: "0 auto" }} className="shadow relative">
+            <Card
+              style={{ margin: "0 auto" }}
+              className="shadow relative carding"
+            >
               <Card.Img
                 className="px-4 pt-2"
                 variant="top"
@@ -41,9 +44,9 @@ function Movies() {
                 </Card.Text>
 
                 <Link to={`/${movie.id}`}>
-                  <div className="d-grid ">
-                    <Button variant="primary">Go To The Film's Page</Button>
-                  </div>
+                    <Button className="button" variant="primary">
+                      Go To The Film's Page
+                    </Button>
                 </Link>
               </Card.Body>
             </Card>

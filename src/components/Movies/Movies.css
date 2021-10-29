@@ -3,7 +3,9 @@
 .App {
   font-family: "DM Sans", sans-serif;
 }
-
+.carding {
+  height: 63vh;
+}
 .rating {
   position: absolute;
   top: 30px;
@@ -28,4 +30,10 @@
   right: 0;
   top: 0;
   bottom: 0;
+}
+.button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
