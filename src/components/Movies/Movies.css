@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+.App {
+  font-family: "DM Sans", sans-serif;
+}
+
+.rating {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.year {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  padding: 0 20px;
+}
+
+.crew {
+  font-size: 15px;
+  font-weight: 500;
+}
