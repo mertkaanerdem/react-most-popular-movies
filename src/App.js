@@ -4,17 +4,19 @@ import Nav from "./components/Navigation";
 import Movies from "./components/Movies";
 import Movie from "./components/Movie";
 
-import "./App.css";
+import { MoviesProvider } from "./context/MoviesContext";
 
 function App() {
   return (
-    <Router>
-      <Nav />
-      <Switch>
-        <Route path="/" component={Movies} exact />
-        <Route path="/:id" component={Movie} />
-      </Switch>
-    </Router>
+    <MoviesProvider>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route path="/" component={Movies} exact />
+          <Route path="/:id" component={Movie} />
+        </Switch>
+      </Router>
+    </MoviesProvider>
   );
 }
 
