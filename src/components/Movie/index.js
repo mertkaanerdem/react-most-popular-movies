@@ -47,7 +47,7 @@ function Movie() {
                   {movie.crew.split(",").join(" ~ ")}
                 </Card.Text>
 
-                <Link to="/">
+                <Link to="/react-most-popular-movies/">
                   <div className="d-grid ">
                     <Button variant="primary">Go To Home Page</Button>
                   </div>

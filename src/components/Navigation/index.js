@@ -4,7 +4,10 @@ function Nav() {
   return (
     <Navbar bg="dark" variant="dark" className="sticky-sm-top">
       <Container>
-        <Navbar.Brand href="/" className="text-warning m-auto">
+        <Navbar.Brand
+          href="/react-most-popular-movies/"
+          className="text-warning m-auto"
+        >
           <img
             alt=""
             src={Logo}
