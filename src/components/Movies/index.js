@@ -7,7 +7,7 @@ function Movies() {
   const { movies, isLoading } = useMovies();
 
   return (
-    <div class="divContainer">
+    <div className="divContainer">
       <Container className="App mt-2">
         {isLoading && (
           <Spinner animation="grow" variant="warning" className="spinner" />
