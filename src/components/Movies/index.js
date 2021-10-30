@@ -7,10 +7,11 @@ function Movies() {
   const { movies, isLoading } = useMovies();
 
   return (
+    <div class="divContainer">
     <Container className="App mt-2">
       {isLoading && (
         <Spinner animation="grow" variant="warning" className="spinner" />
-      )}
+        )}
       <Row xs={1} md={3} xl={4} className="g-4">
         {movies.map((movie) => (
           <Col key={movie.id} className="text-center">
@@ -23,7 +24,7 @@ function Movies() {
                 variant="top"
                 src={movie.image}
                 alt={movie.title}
-              />
+                />
               <Card.Body>
                 <Col className="title">
                   <Card.Title>{movie.title}</Card.Title>
@@ -54,6 +55,7 @@ function Movies() {
         ))}
       </Row>
     </Container>
+                  </div>
   );
 }
 

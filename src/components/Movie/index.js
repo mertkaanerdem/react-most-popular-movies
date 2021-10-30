@@ -1,6 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 import { Container, Row, Col, Card, Button, Spinner } from "react-bootstrap";
 
+import "./Movie.css";
+
 import { useMovies } from "../../context/MoviesContext";
 
 function Movie() {
@@ -17,7 +19,7 @@ function Movie() {
         {filteredMovie.map((movie) => (
           <Col key={movie.id} className="text-center">
             <Card
-              style={{ width: "24vw", margin: "0 auto" }}
+              style={{ width: "22vw", margin: "0 auto" }}
               className="shadow relative"
             >
               <Card.Img

@@ -2,9 +2,9 @@ import { Navbar, Container } from "react-bootstrap";
 import Logo from "../../assets/mertkaanerdem.jpg";
 function Nav() {
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="dark" variant="dark" className="sticky-sm-top">
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/" className="text-warning m-auto">
           <img
             alt=""
             src={Logo}
