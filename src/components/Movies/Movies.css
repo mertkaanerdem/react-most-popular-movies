@@ -17,16 +17,35 @@
   font-family: "DM Sans", sans-serif;
 }
 .carding {
-  height: 63vh;
+  height: 40vh;
+  width: 350px;
+  margin: 20px;
+  position: relative;
 }
+
+.image {
+  position: absolute;
+  top: -30px;
+  padding: 10px;
+  height: 30vh;
+  width: 200px !important;
+  margin-top: 10px;
+}
+.title {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  top: 0;
+}
+
 .rating {
   position: absolute;
-  top: 30px;
+  top: 40px;
   right: 30px;
 }
 .year {
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 0;
   padding: 0 20px;
 }
@@ -34,6 +53,11 @@
 .crew {
   font-size: 15px;
   font-weight: 500;
+  position: absolute;
+  width: 40%;
+  right: 1%;
+  margin: auto;
+  bottom: 40%;
 }
 
 .spinner {
