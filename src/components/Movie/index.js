@@ -29,7 +29,7 @@ function Movie() {
                 alt={movie.title}
               />
               <Card.Body>
-                <Col className="title">
+                {/*   <Col className="title">
                   <Card.Title>{movie.title}</Card.Title>
                   {movie.imDbRating && (
                     <span className="rating bg-warning rounded-circle p-2 me-1">
@@ -42,10 +42,10 @@ function Movie() {
                     </span>
                   </Card.Subtitle>
                 </Col>
-
                 <Card.Text className="crew text-center p-2">
                   {movie.crew.split(",").join(" ~ ")}
                 </Card.Text>
+                */}
 
                 <Link to="/react-most-popular-movies/">
                   <div className="d-grid ">
